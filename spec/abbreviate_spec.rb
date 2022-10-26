@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../class/abbreviate'
 require_relative 'spec_helper'
 
@@ -10,6 +12,5 @@ RSpec.describe do
 
       it { expect(abbreviate.call).to eq('E.C') }
     end
-
   end
 end
