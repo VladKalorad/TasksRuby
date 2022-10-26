@@ -6,16 +6,16 @@ class Abbreviate
   end
 
   def call
-    puts abbrev_name
+    abbrev_name(name)
   end
 
   private
 
   attr_accessor :name
 
-  def abbrev_name
+  def abbrev_name(name)
     first, last = name.split
-    puts "#{first[0].upcase}.#{last[0].upcase}"
+    "#{first[0].upcase}.#{last[0].upcase}"
   end
 end
 
