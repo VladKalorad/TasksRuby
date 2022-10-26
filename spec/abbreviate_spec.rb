@@ -7,7 +7,7 @@ RSpec.describe do
   subject(:abbreviate) { Abbreviate.new(name) }
 
   describe '#call' do
-    context 'when' do
+    context 'when string include fullname' do
       let(:name) { 'Evan Cole' }
 
       it { expect(abbreviate.call).to eq('E.C') }
