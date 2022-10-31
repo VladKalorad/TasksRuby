@@ -13,3 +13,4 @@ class CheckBoolWord
 end
 
 puts CheckBoolWord.new(true).call
+

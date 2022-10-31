@@ -5,7 +5,7 @@ require_relative 'spec_helper'
 
 RSpec.describe do
   describe('#call') do
-    context 'when the equal is X and O' do
+    context 'when the equal is O and X' do
       let(:string) { 'xooxxoo' }
       it { expect(ExesAndOhs.new(string).call).to eq(false) }
     end
