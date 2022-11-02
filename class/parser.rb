@@ -5,21 +5,21 @@ class Parser
 
   def initialize(data)
     @data = data
+    @value = 0
   end
 
   def call
-    val = 0
     parser = []
     data.each_char do |dat|
       case dat
       when 'i'
-        val += 1
+        @value += 1
       when 'd'
-        val -= 1
+        @value -= 1
       when 's'
-        val *= val
+        @value *= @value
       when 'o'
-        parser << val
+        parser << @value
       end
     end
     parser
