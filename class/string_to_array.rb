@@ -8,11 +8,7 @@ class StringToArray
   end
 
   def call
-    arr_digits = []
-    string_array.each do |i|
-      arr_digits.push(i.to_f)
-    end
-    arr_digits
+    string_array.map(&:to_f)
   end
 end
 p StringToArray.new(['1.1', '2.2', '3.3']).call
