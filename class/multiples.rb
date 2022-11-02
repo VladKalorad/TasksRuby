@@ -8,11 +8,7 @@ class Multiples
   end
 
   def call
-    count = 0
-    number.each do |i|
-      count += i if (i % 5).zero? || (i % 3).zero?
-    end
-    count
+    number.select{|i| i%5 == 0 || i%3==0}.sum
   end
 end
 
